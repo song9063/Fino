@@ -11,18 +11,24 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    reqfirstlinewidget.cpp \
-    reqformwidget.cpp
+    components/tables/paramstablemodel.cpp \
+    components/tables/paramstablewidget.cpp \
+    components/reqfirstlinewidget.cpp \
+    tabs/reqformwidget.cpp
 
 HEADERS += \
     mainwindow.h \
-    reqfirstlinewidget.h \
-    reqformwidget.h
+    components/tables/paramstablemodel.h \
+    components/tables/paramstablewidget.h \
+    components/reqfirstlinewidget.h \
+    tabs/reqformwidget.h \
+    values/consts.h
 
 FORMS += \
     mainwindow.ui \
-    reqfirstlinewidget.ui \
-    reqformwidget.ui
+    components/tables/paramstablewidget.ui \
+    components/reqfirstlinewidget.ui \
+    tabs/reqformwidget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

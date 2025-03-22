@@ -44,10 +44,30 @@
         <number>1</number>
        </property>
        <widget class="QWidget" name="verticalLayoutWidget">
-        <layout class="QVBoxLayout" name="verticalLayout"/>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QTabWidget" name="tabWidgetReq">
+           <widget class="QWidget" name="tab_2">
+            <attribute name="title">
+             <string>Tab 2</string>
+            </attribute>
+           </widget>
+          </widget>
+         </item>
+        </layout>
        </widget>
        <widget class="QWidget" name="verticalLayoutWidget_2">
-        <layout class="QVBoxLayout" name="verticalLayout_2"/>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QTabWidget" name="tabWidgetResp">
+           <widget class="QWidget" name="tab_3">
+            <attribute name="title">
+             <string>Tab 1</string>
+            </attribute>
+           </widget>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </widget>
      </item>
@@ -59,7 +79,7 @@
   <customwidget>
    <class>ReqFirstLineWidget</class>
    <extends>QWidget</extends>
-   <header>reqfirstlinewidget.h</header>
+   <header>components/reqfirstlinewidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

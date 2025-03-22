@@ -4,6 +4,8 @@
 #include <QWidget>
 #include <QKeyEvent>
 
+
+#include "components/tables/paramstablewidget.h"
 namespace Ui {
 class ReqFormWidget;
 }
@@ -19,6 +21,11 @@ public:
 protected:
     void keyReleaseEvent(QKeyEvent *event);
 
+private:
+    void initReqWidgets();
+    void initRespWidgets();
+
+    ParamsTableModel *pQueryParamsModel;
 private:
     Ui::ReqFormWidget *ui;
 };

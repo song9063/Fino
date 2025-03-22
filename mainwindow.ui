@@ -28,7 +28,7 @@
      <number>0</number>
     </property>
     <item row="1" column="0">
-     <widget class="QSplitter" name="splitter">
+     <widget class="QSplitter" name="splitterMain">
       <property name="orientation">
        <enum>Qt::Orientation::Horizontal</enum>
       </property>
@@ -173,7 +173,7 @@
   <customwidget>
    <class>ReqFormWidget</class>
    <extends>QWidget</extends>
-   <header>reqformwidget.h</header>
+   <header>tabs/reqformwidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
