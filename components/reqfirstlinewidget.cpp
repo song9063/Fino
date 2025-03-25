@@ -3,8 +3,7 @@
 
 ReqFirstLineWidget::ReqFirstLineWidget(QWidget *parent)
     : QWidget(parent)
-    , ui(new Ui::ReqFirstLineWidget)
-{
+    , ui(new Ui::ReqFirstLineWidget){
     ui->setupUi(this);
 
     m_arMethods = {
@@ -18,7 +17,6 @@ ReqFirstLineWidget::ReqFirstLineWidget(QWidget *parent)
     ui->cbMethods->insertSeparator(6);
 }
 
-ReqFirstLineWidget::~ReqFirstLineWidget()
-{
+ReqFirstLineWidget::~ReqFirstLineWidget(){
     delete ui;
 }

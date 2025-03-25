@@ -10,8 +10,7 @@ namespace Ui {
 class ReqFormWidget;
 }
 
-class ReqFormWidget : public QWidget
-{
+class ReqFormWidget : public QWidget{
     Q_OBJECT
 
 public:

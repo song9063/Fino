@@ -8,8 +8,7 @@ namespace Ui {
 class ParamsTableWidget;
 }
 
-class ParamsTableWidget : public QWidget
-{
+class ParamsTableWidget : public QWidget{
     Q_OBJECT
 
 public:
@@ -17,6 +16,9 @@ public:
     ~ParamsTableWidget();
 
     void setModel(ParamsTableModel *pModel);
+
+private slots:
+    void on_btAddParam_clicked();
 
 private:
     void initUI();

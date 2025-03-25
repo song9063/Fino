@@ -7,8 +7,7 @@ namespace Ui {
 class ReqFirstLineWidget;
 }
 
-class ReqFirstLineWidget : public QWidget
-{
+class ReqFirstLineWidget : public QWidget{
     Q_OBJECT
 
 public:

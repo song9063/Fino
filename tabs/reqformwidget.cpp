@@ -4,8 +4,7 @@
 
 ReqFormWidget::ReqFormWidget(QWidget *parent)
     : QWidget(parent)
-    , ui(new Ui::ReqFormWidget)
-{
+    , ui(new Ui::ReqFormWidget){
     ui->setupUi(this);
     this->setFocusPolicy(Qt::ClickFocus);
 
@@ -13,13 +12,11 @@ ReqFormWidget::ReqFormWidget(QWidget *parent)
     initRespWidgets();
 }
 
-ReqFormWidget::~ReqFormWidget()
-{
+ReqFormWidget::~ReqFormWidget(){
     delete ui;
 }
 
-void ReqFormWidget::keyReleaseEvent(QKeyEvent *event)
-{
+void ReqFormWidget::keyReleaseEvent(QKeyEvent *event){
     if(event->modifiers() & Qt::ControlModifier){
         if(event->key() == Qt::Key_Return)
         qDebug() << "RUN";
@@ -28,8 +25,7 @@ void ReqFormWidget::keyReleaseEvent(QKeyEvent *event)
     QWidget::keyReleaseEvent(event);
 }
 
-void ReqFormWidget::initReqWidgets()
-{
+void ReqFormWidget::initReqWidgets(){
     ui->tabWidgetReq->clear();
 
     // testing
@@ -42,8 +38,7 @@ void ReqFormWidget::initReqWidgets()
 
 }
 
-void ReqFormWidget::initRespWidgets()
-{
+void ReqFormWidget::initRespWidgets(){
     ui->tabWidgetResp->clear();
 }
 

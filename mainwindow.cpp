@@ -5,20 +5,17 @@
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
-{
+    , ui(new Ui::MainWindow){
     ui->setupUi(this);
 
     initUI();
 }
 
-MainWindow::~MainWindow()
-{
+MainWindow::~MainWindow(){
     delete ui;
 }
 
-void MainWindow::initUI()
-{
+void MainWindow::initUI(){
     ui->splitterMain->setStretchFactor(0, 1);
     ui->splitterMain->setStretchFactor(1, 2);
 }

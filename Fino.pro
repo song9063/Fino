@@ -14,6 +14,7 @@ SOURCES += \
     components/tables/paramstablemodel.cpp \
     components/tables/paramstablewidget.cpp \
     components/reqfirstlinewidget.cpp \
+    models/request_models.cpp \
     tabs/reqformwidget.cpp
 
 HEADERS += \
@@ -21,6 +22,7 @@ HEADERS += \
     components/tables/paramstablemodel.h \
     components/tables/paramstablewidget.h \
     components/reqfirstlinewidget.h \
+    models/request_models.h \
     tabs/reqformwidget.h \
     values/consts.h
 

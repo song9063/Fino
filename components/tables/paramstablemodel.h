@@ -2,14 +2,19 @@
 #define PARAMSTABLEMODEL_H
 
 #include <QAbstractTableModel>
+#include "models/request_models.h"
 
-class ParamsTableModel : public QAbstractTableModel
-{
+class ParamsTableModel : public QAbstractTableModel{
     Q_OBJECT
 
 public:
     explicit ParamsTableModel(QObject *parent = nullptr);
+    explicit ParamsTableModel(const QJsonArray &params, QObject *parent = nullptr);
 
+    void addParams(const QJsonArray &params);
+    void addParam(const QJsonObject &param);
+
+public:
     // Header:
     QVariant headerData(int section,
                         Qt::Orientation orientation,
@@ -26,21 +31,13 @@ public:
 
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
 
-    /*
     // Editable:
     bool setData(const QModelIndex &index, const QVariant &value, int role = Qt::EditRole) override;
 
     Qt::ItemFlags flags(const QModelIndex &index) const override;
 
-    // Add data:
-    bool insertRows(int row, int count, const QModelIndex &parent = QModelIndex()) override;
-    bool insertColumns(int column, int count, const QModelIndex &parent = QModelIndex()) override;
-
-    // Remove data:
-    bool removeRows(int row, int count, const QModelIndex &parent = QModelIndex()) override;
-    bool removeColumns(int column, int count, const QModelIndex &parent = QModelIndex()) override;
-*/
 private:
+    QJsonArray m_params;
 };
 
 #endif // PARAMSTABLEMODEL_H
